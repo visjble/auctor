@@ -1,0 +1,15 @@
+<div style="font-family: Arial, sans-serif; padding: 20px; display: flex; flex-direction: column; align-items: center;">
+    <input type="file" id="imgLoader" accept=".png, .jpg, .jpeg" multiple>
+    <div id="menu" style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px; margin-top: 20px;">
+        <label for="interval" style="font-family: Arial, sans-serif;">Set Interval: </label>
+        <input type="number" id="interval" min="1" max="600"> seconds
+        <button id="startButton" style="font-family: Arial, sans-serif;" disabled>Start</button>
+        <button id="pauseButton" style="font-family: Arial, sans-serif;" disabled>Pause</button>
+    </div>
+    <div id="progressContainer" style="width: 1300px; height: 30px; background-color: #eee; display: flex; align-items: center;">
+        <div id="progressBar" style="height: 100%; width: 0; background-color: #3498db;"></div>
+    </div>
+    <span id="imagesLeftLabel" style="font-family: Arial, sans-serif; font-size: 14px; margin-left: 20px;"></span>
+    <canvas id="drawingCanvas" style="border: 1px solid #000; display: block; width: 1300px; height: 800px; margin: 20px 0;"></canvas>
+</div>
+<script type="text/javascript" src="path/to/the/script.js"></script>
